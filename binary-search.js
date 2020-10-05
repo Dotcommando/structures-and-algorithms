@@ -28,7 +28,7 @@ function createSortedArray(startNumber, startRange, rangeMultiplier, arrayLength
 }
 
 const arrayForSearch = createSortedArray(startNumber, startRange, rangeMultiplier, arrayLength);
-const target = arrayForSearch[randomInteger(startNumber + 1, arrayLength - 2)];
+const target = arrayForSearch[randomInteger(startNumber + 1, startNumber + arrayLength - 2)];
 
 console.log(arrayForSearch);
 console.log(`Target: ${target}.`);
